@@ -107,9 +107,9 @@ $app->get("/admin/categories/:idcategory/products", function($idcategory){
 	$page = new PageAdmin();
 
 	$page->setTpl("categories-products",[
-		"category"=>$category->getValues(),
-		"productsRelated"=>$category->getProducts(),
-		"productsNotRelated"=>$category->getProducts(false)
+		'category'=>$category->getValues(),
+		'productsRelated'=>$category->getProducts(),
+		'productsNotRelated'=>$category->getProducts(false)
 	]);
 
 });
